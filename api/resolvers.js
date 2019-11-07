@@ -18,7 +18,6 @@ class Todo {
 module.exports = {
   todo: ({ id }) => todos.find(todo => id == todo.id),
   todos: ({ status }) => {
-    console.log(status)
     switch(status) {
       case 'COMPLETED': return todos.filter(todo => todo.completed);
       case 'UNCOMPLETED': return todos.filter(todo => !todo.completed);
