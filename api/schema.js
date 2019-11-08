@@ -30,6 +30,7 @@ module.exports = buildSchema(`
   
   input TodoInput {
     title: String!
+    completed: Boolean!
     steps: [StepInput]
   }
   
